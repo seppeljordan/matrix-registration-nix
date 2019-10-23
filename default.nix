@@ -17,6 +17,7 @@ python.mkDerivation rec {
 
   doCheck = true;
   propagatedBuildInputs = builtins.attrValues python.packages;
+  buildInputs = [];
 
   meta = with stdenv.lib; {
     homepage = https://github.com/ZerataX/matrix-registration/;
